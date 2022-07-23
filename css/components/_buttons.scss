@@ -1,0 +1,5 @@
+@use '../mixins';
+
+.btn-pazioli{
+    @include mixins.btn-pazioli;
+}

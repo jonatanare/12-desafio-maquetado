@@ -1,0 +1,13 @@
+@use '../variables';
+.hero {
+
+    &__h1{
+        font-size: 32px;
+        color: yellow;
+    }
+
+    .botones{
+        background-color: yellow;
+
+    }
+}

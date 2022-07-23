@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Abril Fatface", cursive;
+  font-weight: bold;
+}
+
+p,
+a {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.btn-pazioli {
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+}
+.btn-pazioli.contained {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+.btn-pazioli.contained:hover {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.btn-pazioli.contained:active {
+  background-color: #000000;
+}
+.btn-pazioli.outlined {
+  background-color: #FFFFFF;
+  color: #000000;
+  border: 1px solid #000000;
+}
+.btn-pazioli.outlined:hover {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.btn-pazioli.outlined:active {
+  background-color: #000000;
+}
+
+.hero__h1 {
+  font-size: 32px;
+  color: yellow;
+}
+.hero .botones {
+  background-color: yellow;
+}/*# sourceMappingURL=style.css.map */

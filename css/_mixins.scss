@@ -1,0 +1,51 @@
+@use './variables';
+
+@mixin btn-pazioli($width: 150px, $height:40px){
+    width: $width;
+    height: $height;
+    border: none;
+    border-radius: 8px;
+    
+    &.contained {
+        background-color: variables.$black-900;
+        color: variables.$brown-800;
+        &:hover {
+            background-color: variables.$black-700;
+            color: variables.$brown-800;
+            cursor: pointer;
+        }
+        &:active{
+            background-color: variables.$black-900;
+
+        }
+    }
+
+    &.outlined {
+        background-color: variables.$brown-800;
+        color: variables.$black-900;
+        border: 1px solid variables.$black-900;
+
+        &:hover {
+            background-color: variables.$black-700;
+            color: variables.$brown-800;
+            cursor: pointer;
+        }
+        
+        &:active{
+            background-color: variables.$black-900;
+
+        }
+
+    }
+
+}
+
+@mixin responsive($breakpoint) {
+
+    @if ($breakpoint == variables.$large) {
+      @media screen and (min-width: variables.$large) {
+        @content;
+      }
+    }
+
+  }
