@@ -1,14 +1,19 @@
 @use './variables';
 
-@mixin btn-pazioli($width: 150px, $height:40px){
+@mixin btn-pazioli($width: 129px, $height:32px){
     width: $width;
     height: $height;
     border: none;
     border-radius: 8px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.05em;
     
     &.contained {
         background-color: variables.$black-900;
         color: variables.$brown-800;
+        
         &:hover {
             background-color: variables.$black-700;
             color: variables.$brown-800;

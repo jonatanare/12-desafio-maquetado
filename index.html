@@ -25,13 +25,27 @@
         </nav>
         <button></button>
     </header>
+    <!-- Hero - Jonatan -->
     <section class="hero">
-        <p class="">El arte de tocar piano</p>
+        <!-- [block-name__element-name] - BEM -->
+        <p class="hero__paragraph">El arte de tocar piano</p>
         <h1 class="hero__h1">Instituto Pazioli</h1>
-        <button class="btn-pazioli contained">Ver cursos</button>
-        <button class="btn-pazioli outlined">Adquirir plano</button>
-        <img src="#" alt="">
+        <div class="hero__buttons">
+            <button class="btn-pazioli contained">Ver cursos</button>
+            <!-- [block-name_or_element-name--modificador] -->
+            <button class="btn-pazioli outlined hero__buttons--purchase">Adquirir plano</button>
+        </div>
+        <div class="hero__img-piano">
+        <img class="" src="/assets/home/hero/img-piano-negro.png" alt="Piano negro">
+        </div>
+
+        <div class="hero__social-media">
+            <a href="www.facebook.com"><img src="/assets/icons/icon-facebook.svg" alt="Facebook"></a>
+            <a href="www.facebook.com"><img src="/assets/icons/icon-linkedin.svg" alt="Facebook"></a>
+            <a href="www.facebook.com"><img src="/assets/icons/icon-twitter.svg" alt="Facebook"></a>
+        </div>
     </section>
+    <!-- New Model - Jonatan -->
     <section class="new-models">
         <h2>Conoce nuestro nuevo modelo en calse</h2>
         <img src="#" alt="">
@@ -141,4 +155,5 @@
         DevKoore
     </footer>
 </body>
+
 </html>
