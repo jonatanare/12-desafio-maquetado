@@ -58,6 +58,75 @@ a {
   background-color: #000000;
 }
 
+.header {
+  height: 100px;
+  z-index: 999;
+  padding: 32px 34px 0 16px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #FFFFFF;
+}
+@media screen and (min-width: 992px) {
+  .header {
+    padding-left: 32px;
+    padding-right: 50px;
+  }
+}
+.header .nav {
+  display: flex;
+  justify-content: space-between;
+}
+.header .nav .wrapper-nav {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.header .nav__list {
+  display: none;
+  list-style: none;
+}
+.header .nav__list li a {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  color: #000000;
+}
+.header .nav__list .btn--contact-us {
+  color: #FFFFFF;
+}
+@media screen and (min-width: 992px) {
+  .header .nav__list {
+    display: flex;
+    width: 397px;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.header .nav .cart__btn {
+  width: 35px;
+  height: 35px;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  margin-left: 24px;
+}
+.header .nav .cart__btn span {
+  width: 24px;
+  height: 17px;
+  background-color: #FFBA60;
+  position: absolute;
+  border-radius: 50px;
+  top: 0;
+  right: -18px;
+  color: #FFFFFF;
+}
+
 .hero {
   position: relative;
 }
