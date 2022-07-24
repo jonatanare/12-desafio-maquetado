@@ -1,1 +1,86 @@
 @use '../variables';
+@use '../mixins';
+
+.header {
+    height: 100px;
+    z-index: 999;
+    padding: 32px 34px 0 16px;
+    position: sticky;
+    top: 0;
+    background-color: variables.$brown-800;
+
+    @include mixins.responsive(variables.$large) {
+        padding-left: 32px;
+        padding-right: 50px;
+    }
+    
+    // position: fixed;
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        &__logo {
+            
+        }
+
+        .wrapper-nav {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        &__list {
+            display: none;
+            list-style: none;
+
+            li { 
+                a {
+                    font-family: variables.$font-raleway;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 16px;
+                    letter-spacing: 0.05em;
+                    text-decoration: none;
+                    color: variables.$black-900;                    
+                }
+            }
+
+            .btn--contact-us {
+                color: variables.$brown-800;
+            }
+
+
+            @include mixins.responsive(variables.$large){
+                display: flex;
+                width: 397px;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+        }
+        .cart__btn {
+            width: 35px;
+            height: 35px;
+            border: none;
+            background-color: transparent;
+            position: relative;
+            margin-left: 24px;
+            
+            span {
+                width: 24px;
+                height: 17px;
+                background-color: #FFBA60;
+                position: absolute;
+                border-radius: 50px;
+                top: 0;
+                right: -18px;
+                color: variables.$brown-800;
+                
+
+
+            }
+
+        }
+}
+}

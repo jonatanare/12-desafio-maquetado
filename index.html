@@ -1,159 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <title>12 Desafío Modulo Maquetado</title>
-
-</head>
-
-<body>
+  </head>
+  <body>
     <header class="header">
-        <nav class="nav">
-            <a href="#">
-                <img src="icon-pazioli" alt="">
-            </a>
-            <img src="carrito" alt="">
-        </nav>
-        <button></button>
+      <nav class="nav">
+        <a class="nav__logo" href="/">
+            <img src="assets/home/nav/pazioli-image.svg" alt="Pazioli Logo"/>
+        </a>
+        <div class="wrapper-nav">
+        <ul class="nav__list">
+          <li><a href="Home">Home</a></li>
+          <li><a href="Pianos">Pianos</a></li>
+          <li><a href="Soy estudiante">Soy estudiante</a></li>
+          <li><button class="btn-pazioli contained btn--contact-us">Contáctanos</button></li>
+        </ul>
+        <button class="cart__btn">
+          <img src="assets/icons/icon-cart.svg" alt="Cart Logo"/>
+          <span>1</span>
+        </button>
+      </div>
+      </nav>
     </header>
     <!-- Hero - Jonatan -->
     <section class="hero">
-        <!-- [block-name__element-name] - BEM -->
-        <p class="hero__paragraph">El arte de tocar piano</p>
-        <h1 class="hero__h1">Instituto Pazioli</h1>
-        <div class="hero__buttons">
-            <button class="btn-pazioli contained">Ver cursos</button>
-            <!-- [block-name_or_element-name--modificador] -->
-            <button class="btn-pazioli outlined hero__buttons--purchase">Adquirir plano</button>
-        </div>
-        <div class="hero__img-piano">
-        <img class="" src="/assets/home/hero/img-piano-negro.png" alt="Piano negro">
-        </div>
+      <!-- [block-name__element-name] - BEM -->
+      <p class="hero__paragraph">El arte de tocar piano</p>
+      <h1 class="hero__h1">Instituto Pazioli</h1>
+      <div class="hero__buttons">
+        <button class="btn-pazioli contained">Ver cursos</button>
+        <!-- [block-name_or_element-name--modificador] -->
+        <button class="btn-pazioli outlined hero__buttons--purchase">
+          Adquirir plano
+        </button>
+      </div>
+      <div class="hero__img-piano">
+        <img
+          class=""
+          src="/assets/home/hero/img-piano-negro.png"
+          alt="Piano negro"
+        />
+      </div>
 
-        <div class="hero__social-media">
-            <a href="www.facebook.com"><img src="/assets/icons/icon-facebook.svg" alt="Facebook"></a>
-            <a href="www.facebook.com"><img src="/assets/icons/icon-linkedin.svg" alt="Facebook"></a>
-            <a href="www.facebook.com"><img src="/assets/icons/icon-twitter.svg" alt="Facebook"></a>
-        </div>
+      <div class="hero__social-media">
+        <a href="www.facebook.com"
+          ><img src="/assets/icons/icon-facebook.svg" alt="Facebook"
+        /></a>
+        <a href="www.facebook.com"
+          ><img src="/assets/icons/icon-linkedin.svg" alt="Facebook"
+        /></a>
+        <a href="www.facebook.com"
+          ><img src="/assets/icons/icon-twitter.svg" alt="Facebook"
+        /></a>
+      </div>
     </section>
     <!-- New Model - Jonatan -->
     <section class="new-models">
-        <h2>Conoce nuestro nuevo modelo en calse</h2>
-        <img src="#" alt="">
-        <article>
-            <h3>Nuevo Ebony F228</h3>
-            <h4>Valoración</h4>
-            <h3>Desde: $110,00.00</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, iste iusto. Nam accusantium quod, dolore
-                commodi voluptate explicabo ducimus soluta neque ut at aliquam sapiente dicta ea libero possimus.
-                Numquam.</p>
-            <ul>
-                <li>Nuevo</li>
-                <li>2021</li>
-                <li>Acús...</li>
-                <li>M. Cedro</li>
-            </ul>
-            <button class="btn-pazioli contained">Agregar al carrito</button>
-        </article>
+      <h2>Conoce nuestro nuevo modelo en calse</h2>
+      <img src="#" alt="" />
+      <article>
+        <h3>Nuevo Ebony F228</h3>
+        <h4>Valoración</h4>
+        <h3>Desde: $110,00.00</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, iste
+          iusto. Nam accusantium quod, dolore commodi voluptate explicabo
+          ducimus soluta neque ut at aliquam sapiente dicta ea libero possimus.
+          Numquam.
+        </p>
+        <ul>
+          <li>Nuevo</li>
+          <li>2021</li>
+          <li>Acús...</li>
+          <li>M. Cedro</li>
+        </ul>
+        <button class="btn-pazioli contained">Agregar al carrito</button>
+      </article>
     </section>
     <section class="products-type">
-        <h2>¿Qué tipo de piano estás buscando?</h2>
-        <article>
-            <img src="#" alt="">
-            <h3>The Butterfly</h3>
-            <ul>
-                <li>Nuevo</li>
-                <li>2021</li>
-                <li>Acús...</li>
-                <li>M. Cedro</li>
-            </ul>
-            <p>Desde: $195k mn</p>
-            <button>Carrito</button>
-        </article>
-        <article>
-            <img src="#" alt="">
-            <h3>Golden Leaf</h3>
-            <ul>
-                <li>Nuevo</li>
-                <li>2021</li>
-                <li>Acús...</li>
-                <li>M. Cedro</li>
-            </ul>
-            <p>Desde: $305k mn</p>
-            <button>Carrito</button>
-        </article>
-        <article>
-            <img src="#" alt="">
-            <h3>Walnut Strauss</h3>
-            <ul>
-                <li>Nuevo</li>
-                <li>2021</li>
-                <li>Acús...</li>
-                <li>M. Cedro</li>
-            </ul>
-            <p>Desde: $125k mn</p>
-            <button>Carrito</button>
-        </article>
-        <button>Ver más</button>
+      <h2>¿Qué tipo de piano estás buscando?</h2>
+      <article>
+        <img src="#" alt="" />
+        <h3>The Butterfly</h3>
+        <ul>
+          <li>Nuevo</li>
+          <li>2021</li>
+          <li>Acús...</li>
+          <li>M. Cedro</li>
+        </ul>
+        <p>Desde: $195k mn</p>
+        <button>Carrito</button>
+      </article>
+      <article>
+        <img src="#" alt="" />
+        <h3>Golden Leaf</h3>
+        <ul>
+          <li>Nuevo</li>
+          <li>2021</li>
+          <li>Acús...</li>
+          <li>M. Cedro</li>
+        </ul>
+        <p>Desde: $305k mn</p>
+        <button>Carrito</button>
+      </article>
+      <article>
+        <img src="#" alt="" />
+        <h3>Walnut Strauss</h3>
+        <ul>
+          <li>Nuevo</li>
+          <li>2021</li>
+          <li>Acús...</li>
+          <li>M. Cedro</li>
+        </ul>
+        <p>Desde: $125k mn</p>
+        <button>Carrito</button>
+      </article>
+      <button>Ver más</button>
     </section>
     <section class="contact-us">
-        <h2>Contáctanos</h2>
-        <p>¿Quieres educarte formalmente en este instrumento? Toca más rápido, logra mayor fluidez en las composiciones
-            complejas. Contáctanos para conocer tus objetivos.</p>
-        <div>
-            <form action="#">Nombre</form>
-            <!--Meter 'type'-->
-            <form action="#">Teléfono</form>
-            <form action="#">Email</form>
-            <form action="#">Cuéntanos más</form>
-            <button>Enviar</button>
-        </div>
+      <h2>Contáctanos</h2>
+      <p>
+        ¿Quieres educarte formalmente en este instrumento? Toca más rápido,
+        logra mayor fluidez en las composiciones complejas. Contáctanos para
+        conocer tus objetivos.
+      </p>
+      <div>
+        <form action="#">Nombre</form>
+        <!--Meter 'type'-->
+        <form action="#">Teléfono</form>
+        <form action="#">Email</form>
+        <form action="#">Cuéntanos más</form>
+        <button>Enviar</button>
+      </div>
     </section>
     <section class="partners">
-        <h2>Conoce a nuestros partners</h2>
-        <a href="">PETROF</a>
-        <!--<button></button>-->
-        <a href="">BOOKPA</a>
-        <!--<button></button>-->
-        <img src="#" alt="">
-        <a href="">PIAFMAR</a>
-        <!--<button></button>-->
-        <img src="#" alt="">
+      <h2>Conoce a nuestros partners</h2>
+      <a href="">PETROF</a>
+      <!--<button></button>-->
+      <a href="">BOOKPA</a>
+      <!--<button></button>-->
+      <img src="#" alt="" />
+      <a href="">PIAFMAR</a>
+      <!--<button></button>-->
+      <img src="#" alt="" />
     </section>
     <footer class="footer">
-        <a href="#">
-            <img src="#" alt="">
-        </a>
-        <a href="">Facebook</a>
-        <a href="">Twitter</a>
-        <a href="">LinkedIn</a>
-        <h5>Nosotros</h5>
-        <ul>
-            <li>Home</li>
-            <li>Nuevo</li>
-            <li>Pianos</li>
-            <li>Conoce nuestros cursos</li>
-        </ul>
-        <h5>Contáctanos</h5>
-        <p>
-            México
-            Tonalá 10, Roma Nte, Cuauhtémoc, 03800 Ciudad de México, CDMX.
-        </p>
-        <p>© Pazioli 2021, todos los derechos reservados.</p>
-        <h6></h6>
-        <!--<p>-->
-        Powered with ♥️ by
-        DevKoore
+      <a href="#">
+        <img src="#" alt="" />
+      </a>
+      <a href="">Facebook</a>
+      <a href="">Twitter</a>
+      <a href="">LinkedIn</a>
+      <h5>Nosotros</h5>
+      <ul>
+        <li>Home</li>
+        <li>Nuevo</li>
+        <li>Pianos</li>
+        <li>Conoce nuestros cursos</li>
+      </ul>
+      <h5>Contáctanos</h5>
+      <p>
+        México Tonalá 10, Roma Nte, Cuauhtémoc, 03800 Ciudad de México, CDMX.
+      </p>
+      <p>© Pazioli 2021, todos los derechos reservados.</p>
+      <h6></h6>
+      <!--<p>-->
+      Powered with ♥️ by DevKoore
     </footer>
-</body>
-
+  </body>
 </html>
