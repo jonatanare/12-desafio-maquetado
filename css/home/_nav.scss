@@ -18,7 +18,7 @@
         display: flex;
         justify-content: space-between;
         &__logo {
-            width: 88px;
+            max-width: 88px;
         }
 
         .wrapper-nav {
