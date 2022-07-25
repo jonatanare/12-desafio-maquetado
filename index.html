@@ -19,6 +19,7 @@
     <title>12 Desafío Modulo Maquetado</title>
   </head>
   <body>
+    <!-- NAV - Víctor -->
     <header class="header">
       <nav class="nav">
         <a class="nav__logo" href="/">
@@ -98,59 +99,95 @@
       </article>
     </section>
     <section class="products-type">
-      <h2>¿Qué tipo de piano estás buscando?</h2>
-      <article>
-        <img src="#" alt="" />
-        <h3>The Butterfly</h3>
-        <ul>
-          <li>Nuevo</li>
-          <li>2021</li>
-          <li>Acús...</li>
-          <li>M. Cedro</li>
-        </ul>
-        <p>Desde: $195k mn</p>
-        <button>Carrito</button>
-      </article>
-      <article>
-        <img src="#" alt="" />
-        <h3>Golden Leaf</h3>
-        <ul>
-          <li>Nuevo</li>
-          <li>2021</li>
-          <li>Acús...</li>
-          <li>M. Cedro</li>
-        </ul>
-        <p>Desde: $305k mn</p>
-        <button>Carrito</button>
-      </article>
-      <article>
-        <img src="#" alt="" />
-        <h3>Walnut Strauss</h3>
-        <ul>
-          <li>Nuevo</li>
-          <li>2021</li>
-          <li>Acús...</li>
-          <li>M. Cedro</li>
-        </ul>
-        <p>Desde: $125k mn</p>
-        <button>Carrito</button>
-      </article>
-      <button>Ver más</button>
+      <h2 class="products-type__title">¿Qué tipo de piano estás buscando?</h2>
+      <section class="wrapper-card">
+        <article class="card">
+          <div class="card__image">
+            <img src="assets/home/products-type/img-butterfly.png" alt="" />
+          </div>
+          <div class="wrapper-content">
+            <h3 class="card__title">The Butterfly</h3>
+            <ul class="card__features">
+              <li>Nuevo</li>
+              <li>2021</li>
+              <li>Acús...</li>
+              <li>M. Cedro</li>
+            </ul>
+            <div class="card__buttons">
+              <p class="card__buttons-price">Desde: $195k mn</p>
+              <button class="btn-pazioli contained card__buttons-buy">
+                <img src="./assets/icons/icon-car-white.svg" alt="Add Cart">
+              </button>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__image">
+            <img src="./assets/home/products-type/img-golden.png" alt="" />
+          </div>
+          <div class="wrapper-content">
+            <h3 class="card__title">Golden Leaf</h3>
+            <ul class="card__features">
+              <li>Nuevo</li>
+              <li>2021</li>
+              <li>Acús...</li>
+              <li>M. Cedro</li>
+            </ul>
+            <div class="card__buttons">
+              <p class="card__buttons-price">Desde: $305k mn</p>
+              <button class="btn-pazioli contained card__buttons-buy">
+                <img src="./assets/icons/icon-car-white.svg" alt="Add Cart">
+              </button>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__image">
+            <img src="./assets/home/products-type/img-walnut.png" alt="" />
+          </div>
+          <div class="wrapper-content">
+            <h3 class="card__title">Walnut Strauss</h3>
+            <ul class="card__features">
+              <li>Nuevo</li>
+              <li>2021</li>
+              <li>Acús...</li>
+              <li>M. Cedro</li>
+            </ul>
+            <div class="card__buttons">
+              <p class="card__buttons-price">Desde: $125k mn</p>
+              <button class="btn-pazioli contained card__buttons-buy">
+                <img src="./assets/icons/icon-car-white.svg" alt="Add Cart">
+              </button> 
+            </div>        
+          </div>
+        </article>
+      </section>
+      <button class="btn-pazioli contained btn-show">
+          Ver más
+      </button>
+
     </section>
+    <!-- CONTACT-US - Víctor -->
     <section class="contact-us">
-      <h2>Contáctanos</h2>
-      <p>
-        ¿Quieres educarte formalmente en este instrumento? Toca más rápido,
-        logra mayor fluidez en las composiciones complejas. Contáctanos para
-        conocer tus objetivos.
-      </p>
-      <div>
-        <form action="#">Nombre</form>
-        <!--Meter 'type'-->
-        <form action="#">Teléfono</form>
-        <form action="#">Email</form>
-        <form action="#">Cuéntanos más</form>
-        <button>Enviar</button>
+      <div class="overlay"></div>
+      <div class="content-wrapper">
+        <h2 class="contact-us__title">Contáctanos</h2>
+        <p class="contact-us__paragraph">
+          ¿Quieres educarte formalmente en este instrumento? Toca más rápido,
+          logra mayor fluidez en las composiciones complejas. Contáctanos para
+          conocer tus objetivos.
+        </p>
+        <form class="contact-us__forms">
+          <label action="#">Nombre</label>
+          <input type="text" name="" id="" />
+          <label action="#">Teléfono</label>
+          <input type="tel" name="" id="" />
+          <label action="#">Email</label>
+          <input type="email" name="" id="" />
+          <label action="#">Cuéntanos más</label>
+          <textarea id="w3review" name="" rows="" cols=""></textarea>
+          <button class="btn-pazioli contained">Enviar</button>
+        </form>
       </div>
     </section>
     <section class="partners">
@@ -220,19 +257,19 @@
       <a href="">LinkedIn</a>
       <h5>Nosotros</h5>
       <ul>
-        <li>Home</li>
-        <li>Nuevo</li>
-        <li>Pianos</li>
-        <li>Conoce nuestros cursos</li>
+        <li><a href="/"> Home</a></li>
+        <li><a href="Nuevo">Nuevo</a></li>
+        <li><a href="Pianos">Pianos</a></li>
+        <li><a href="Pianos">Conoce nuestros cursos</a></li>
       </ul>
       <h5>Contáctanos</h5>
-      <p>
+      <p><!--Address tag-->>
         México Tonalá 10, Roma Nte, Cuauhtémoc, 03800 Ciudad de México, CDMX.
       </p>
       <p>© Pazioli 2021, todos los derechos reservados.</p>
       <h6></h6>
       <!--<p>-->
-      Powered with ♥️ by DevKoore
+      Powered with ♥️ by<br><strong>DevKoore</strong>
     </footer>
   </body>
 </html>

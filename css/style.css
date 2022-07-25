@@ -117,6 +117,7 @@ a {
   background-color: transparent;
   position: relative;
   margin-left: 24px;
+  cursor: pointer;
 }
 .header .nav .cart__btn span {
   width: 24px;
@@ -216,6 +217,48 @@ a {
 .partners__title {
   font-family: "Abril Fatface", cursive;
   color: #000000;
+.products-type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 56px;
+}
+@media screen and (min-width: 992px) {
+  .products-type .wrapper-card {
+    display: flex;
+    flex-direction: row;
+    margin-top: 172px;
+    width: 100%;
+    margin-bottom: 84px;
+  }
+}
+.products-type__title {
+.contact-us {
+  text-align: center;
+  background-repeat: no-repeat;
+  background: url(/assets/home/contact-us/contact_bckgrnd.svg) no-repeat center;
+  position: relative;
+  background-size: cover;
+  z-index: 0;
+}
+@media screen and (min-width: 992px) {
+  .contact-us {
+    width: 100vw;
+  }
+}
+.contact-us .overlay {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0.35) 100%);
+}
+.contact-us .content-wrapper {
+  position: relative;
+  z-index: 2;
+}
+.contact-us__title {
+  font-family: "Abril Fatface", cursive;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -297,4 +340,188 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  letter-spacing: 0.05em;
+  margin-bottom: 32px;
+  margin-top: 32px;
+  width: 288px;
+}
+@media screen and (min-width: 992px) {
+  .products-type__title {
+    font-size: 32px;
+    line-height: 43px;
+    margin-top: 162px;
+    width: 470px;
+  }
+}
+.products-type .card {
+  background: #FFFFFF;
+  box-shadow: 0px 28px 64px 12px rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  width: 250px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+@media screen and (min-width: 992px) {
+  .products-type .card {
+    margin-bottom: 0;
+    height: 239px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+  }
+}
+.products-type .card__image {
+  max-width: 205px;
+  margin: 0 auto;
+  border-bottom: 1px dashed #DBDBDB;
+}
+@media screen and (min-width: 992px) {
+  .products-type .card__image {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    border-bottom: 0;
+  }
+}
+.products-type .card__image img {
+  margin-top: 20px;
+  margin-bottom: 22px;
+}
+@media screen and (min-width: 992px) {
+  .products-type .card__image img {
+    margin: 0;
+  }
+}
+@media screen and (min-width: 992px) {
+  .products-type .card .wrapper-content {
+    border-top: 1px dashed #DBDBDB;
+    padding-top: 16px;
+  }
+}
+.products-type .card__title {
+  font-family: "Abril Fatface", cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  color: #000000;
+  margin-bottom: 16px;
+}
+.products-type .card__features {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+  width: 226px;
+  margin: 0 auto;
+}
+.products-type .card__features li {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  color: #000000;
+  line-height: 14px;
+}
+.products-type .card__features li:first-child {
+  list-style: none;
+}
+.products-type .card__buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 16px;
+  align-items: center;
+}
+.products-type .card__buttons-price {
+  border: 1px solid #000000;
+  border-radius: 8px;
+  width: 161px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.products-type .card__buttons-buy {
+  width: 36px;
+  height: 36px;
+  position: relative;
+  height: 35px;
+  padding: 7px 7px 6px 7px;
+}
+.products-type .btn-show {
+  margin-top: 10px;
+  letter-spacing: 0.05em;
+  margin-top: 39px;
+  margin-bottom: 39px;
+  z-index: 3;
+}
+.contact-us__paragraph {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  margin-bottom: 24px;
+}
+@media screen and (min-width: 992px) {
+  .contact-us__paragraph {
+    max-width: 561px;
+    margin: 0 auto;
+  }
+}
+.contact-us__forms {
+  margin-top: 15px;
+  margin-bottom: 25px;
+  text-align: start;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media screen and (min-width: 992px) {
+  .contact-us__forms {
+    max-width: 464px;
+    margin: 0 auto;
+  }
+}
+.contact-us__forms label,
+.contact-us__forms input {
+  display: block;
+}
+.contact-us label {
+  margin-top: 24px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+}
+.contact-us input,
+.contact-us textarea {
+  width: 100%;
+  height: 36px;
+  background: rgba(0, 0, 0, 0.65);
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+.contact-us textarea {
+  height: 148px;
+  width: 100%;
+  resize: none;
+}
+.contact-us button {
+  width: 100%;
+  margin-top: 24px;
+  margin-bottom: 60px;
 }/*# sourceMappingURL=style.css.map */
