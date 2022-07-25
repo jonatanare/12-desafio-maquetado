@@ -1,0 +1,113 @@
+@use "../variables";
+@use "../mixins";
+
+.contact-us {
+  // display: block;
+  text-align: center;
+  background-repeat: no-repeat;
+  background: url(/assets/home/contact-us/contact_bckgrnd.svg) no-repeat center;
+  position: relative;
+  background-size: cover;
+  z-index: 0;
+
+  @include mixins.responsive(variables.$large) {
+    width: 100vw; // Estoy ocupando donto el ancho de la pantalla viewport width
+  }
+
+  .overlay {
+    // Adding gradient all 'contact-us' section
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      180deg,
+      #ffffff 0%,
+      rgba(255, 255, 255, 0.35) 100%
+    );
+  }
+
+  .content-wrapper {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__title {
+    // .contacts__title
+    font-family: variables.$font-abril-fatface;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.05em;
+    margin-top: 39px;
+    margin-bottom: 39px;
+    z-index: 3;
+  }
+
+  &__paragraph {
+        font-family: variables.$font-raleway;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.05em;
+        margin-bottom: 24px;
+
+        @include mixins.responsive(variables.$large) {
+            max-width: 561px;
+            margin: 0 auto;
+        }
+    }
+  
+  &__forms {
+    // .contacts__forms
+    margin-top: 15px;
+    margin-bottom: 25px;
+    // align-content: left;
+    text-align: start;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    @include mixins.responsive(variables.$large) {
+      max-width: 464px;
+      margin: 0 auto;
+    }
+
+    label,
+    input {
+      display: block;
+    }
+  }
+  label {
+    margin-top: 24px;
+    font-family: variables.$font-raleway;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+  }
+  input,
+  textarea {
+    width: 100%;
+    height: 36px;
+    background: rgba(0, 0, 0, 0.65);
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    margin-top: 10px;
+  }
+
+  textarea {
+    height: 148px;
+    width: 100%;
+    resize: none;
+  }
+
+  button {
+    // .contact
+    width: 100%;
+    margin-top: 24px;
+    margin-bottom: 60px;
+  }
+}
