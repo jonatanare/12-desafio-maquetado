@@ -140,6 +140,17 @@ a {
   padding-right: 16px;
   background: linear-gradient(177.96deg, rgba(255, 255, 255, 0.43) 1.72%, #6F6F6F 107.44%);
 }
+@media screen and (min-width: 992px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer .poweredby {
+    flex-direction: column;
+    position: absolute;
+  }
+}
 .footer__logo {
   width: 100%;
   margin-top: 56px;
