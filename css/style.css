@@ -130,6 +130,104 @@ a {
   color: #FFFFFF;
 }
 
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 50px;
+  text-align: center;
+  padding-left: 16px;
+  padding-right: 16px;
+  background: linear-gradient(177.96deg, rgba(255, 255, 255, 0.43) 1.72%, #6F6F6F 107.44%);
+}
+@media screen and (min-width: 992px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer .poweredby {
+    flex-direction: column;
+    position: absolute;
+  }
+}
+.footer__logo {
+  width: 100%;
+  margin-top: 56px;
+}
+.footer__social-media {
+  margin-top: 56px;
+}
+.footer__social-media a:first-child {
+  margin-right: 21.33px;
+}
+.footer__social-media a:last-child {
+  margin-left: 21.33px;
+}
+.footer__menu-title {
+  margin-top: 56px;
+  font-family: "Abril Fatface", cursive;
+  font-style: normal;
+  font-weight: 400px;
+  font-size: 14px;
+  line-height: 19px;
+}
+.footer__menu .options {
+  list-style: none;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+  margin-top: 16px;
+}
+.footer__menu .options li {
+  margin-bottom: 8px;
+}
+.footer__menu .options li a {
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+}
+.footer__menu .options li:last-child {
+  margin-bottom: 0;
+}
+.footer__address-title {
+  margin-top: 24px;
+  font-family: "Abril Fatface", cursive;
+  font-style: normal;
+  font-weight: 400px;
+  font-size: 14px;
+  line-height: 19px;
+  margin-bottom: 16px;
+}
+.footer__address address {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  width: 212px;
+  margin: 0 auto;
+}
+.footer .copyrigth {
+  margin-top: 81px;
+  margin-bottom: 32px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+}
+.footer .poweredby {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 80px;
+}
+
 .hero {
   position: relative;
 }
@@ -362,6 +460,7 @@ a {
     transform: translateX(-10%);
   }
 }
+
 
 .products-type {
   display: flex;
