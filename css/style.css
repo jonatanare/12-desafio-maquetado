@@ -212,11 +212,157 @@ a {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media screen and (min-width: 992px) {
+  .partners__wrapper {
+    width: 100%;
   }
 }
 .partners__title {
   font-family: "Abril Fatface", cursive;
   color: #000000;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+@media screen and (min-width: 992px) {
+  .partners__title {
+    font-size: 32px;
+    margin-bottom: 81px;
+  }
+}
+.partners .block-partners {
+  list-style: none;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+  margin-top: 32px;
+}
+@media screen and (min-width: 992px) {
+  .partners .block-partners {
+    display: flex;
+    justify-content: center;
+  }
+}
+.partners .block-partners li {
+  display: none;
+}
+.partners .block-partners li:first-child {
+  display: flex;
+}
+@media screen and (min-width: 992px) {
+  .partners .block-partners li {
+    display: flex;
+  }
+}
+.partners .block-partners__items {
+  height: 103px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  background-color: #000000;
+  border-radius: 100px;
+}
+@media screen and (min-width: 992px) {
+  .partners .block-partners__items {
+    max-width: 328px;
+    max-height: 103px;
+  }
+}
+.partners .block-partners__items span::first-letter {
+  font-size: 47px;
+}
+.partners .block-partners__items--leftradius {
+  border-radius: 88.9758px 14.2361px 14.2361px 88.9758px;
+  padding-left: 7px;
+  margin-right: 89px;
+}
+.partners .block-partners__items--leftradius .bg-logo {
+  margin-right: 26px;
+}
+.partners .block-partners__items--leftradius .bg-logo #parispian {
+  width: 70px;
+  height: 38px;
+}
+.partners .block-partners__items--leftradius .bg-logo #pianotwo {
+  width: 43px;
+  height: 43px;
+}
+.partners .block-partners__items--rightradius {
+  border-radius: 14.2361px 88.9758px 88.9758px 14.2361px;
+  padding-right: 7px;
+  display: flex;
+  justify-content: end;
+}
+.partners .block-partners__items--rightradius a {
+  justify-content: flex-end;
+}
+.partners .block-partners__items--rightradius .bg-logo {
+  margin-left: 42px;
+}
+@media screen and (min-width: 992px) {
+  .partners .block-partners__items--rightradius, .partners .block-partners__items--leftradius {
+    border-radius: 1000px;
+  }
+}
+.partners .block-partners__items .bg-logo {
+  width: 88.98px;
+  height: 88.98px;
+  background: rgba(255, 255, 255, 0.5);
+  border: 0.889758px solid #ffffff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+.partners .block-partners__items--link {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+}
+.partners .block-partners__items--link span {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.partners .block-partners #hefilti {
+  margin-right: 81px;
+  margin-left: 81px;
+}
+.partners .block-partners .piafmar {
+  order: 2;
+}
+@media screen and (min-width: 992px) {
+  .partners .block-partners .piafmar {
+    border-radius: 88.9758px 14.2361px 14.2361px 88.9758px;
+  }
+}
+.partners .block-partners .pianotwo {
+  order: 1;
+}
+.partners .block-partners--middle {
+  margin-top: 56.79px;
+  margin-bottom: 56.79px;
+  justify-content: space-between;
+}
+@media screen and (min-width: 992px) {
+  .partners .block-partners--middle {
+    width: 120%;
+    transform: translateX(-10%);
+  }
+}
+
 .products-type {
   display: flex;
   flex-direction: column;
@@ -233,113 +379,11 @@ a {
   }
 }
 .products-type__title {
-.contact-us {
-  text-align: center;
-  background-repeat: no-repeat;
-  background: url(/assets/home/contact-us/contact_bckgrnd.svg) no-repeat center;
-  position: relative;
-  background-size: cover;
-  z-index: 0;
-}
-@media screen and (min-width: 992px) {
-  .contact-us {
-    width: 100vw;
-  }
-}
-.contact-us .overlay {
-  position: absolute;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0.35) 100%);
-}
-.contact-us .content-wrapper {
-  position: relative;
-  z-index: 2;
-}
-.contact-us__title {
   font-family: "Abril Fatface", cursive;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 32px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.05em;
-}
-.partners .block-partners {
-  list-style: none;
-  -webkit-padding-start: 0px;
-          padding-inline-start: 0px;
-  margin-top: 32px;
-}
-@media screen and (min-width: 992px) {
-  .partners .block-partners {
-    display: flex;
-  }
-}
-.partners .block-partners li {
-  display: none;
-}
-.partners .block-partners li:first-child {
-  display: block;
-}
-@media screen and (min-width: 992px) {
-  .partners .block-partners li {
-    display: block;
-  }
-}
-.partners .block-partners__items {
-  height: 103px;
-  display: flex;
-  width: 100%;
-  align-items: center;
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 38px;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-@media screen and (min-width: 992px) {
-  .partners .block-partners__items {
-    max-width: 328px;
-    max-height: 103px;
-  }
-}
-.partners .block-partners__items span::first-letter {
-  font-size: 47px;
-}
-.partners .block-partners__items--leftradius {
-  border-radius: 88.9758px 14.2361px 14.2361px 88.9758px;
-  padding-left: 7px;
-}
-.partners .block-partners__items--leftradius .bg-logo {
-  margin-right: 25px;
-}
-.partners .block-partners__items--rightradius {
-  border-radius: 14.2361px 88.9758px 88.9758px 14.2361px;
-  padding-right: 7px;
-  display: flex;
-  justify-content: end;
-}
-.partners .block-partners__items--rightradius .bg-logo {
-  margin-left: 25px;
-}
-@media screen and (min-width: 992px) {
-  .partners .block-partners__items--rightradius, .partners .block-partners__items--leftradius {
-    border-radius: 1000px;
-  }
-}
-.partners .block-partners__items .bg-logo {
-  width: 88.98px;
-  height: 88.98px;
-  background: rgba(255, 255, 255, 0.5);
-  border: 0.889758px solid #ffffff;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.05em;
   margin-bottom: 32px;
@@ -460,6 +504,38 @@ a {
 }
 .products-type .btn-show {
   margin-top: 10px;
+}
+
+.contact-us {
+  text-align: center;
+  background-repeat: no-repeat;
+  background: url(/assets/home/contact-us/contact_bckgrnd.svg) no-repeat center;
+  position: relative;
+  background-size: cover;
+  z-index: 0;
+}
+@media screen and (min-width: 992px) {
+  .contact-us {
+    width: 100vw;
+  }
+}
+.contact-us .overlay {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0.35) 100%);
+}
+.contact-us .content-wrapper {
+  position: relative;
+  z-index: 2;
+}
+.contact-us__title {
+  font-family: "Abril Fatface", cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
   letter-spacing: 0.05em;
   margin-top: 39px;
   margin-bottom: 39px;
