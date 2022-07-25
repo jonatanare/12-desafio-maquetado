@@ -201,6 +201,22 @@ a {
     bottom: 81px;
   }
 }
+
+.partners {
+  background: linear-gradient(177.96deg, #6f6f6f 1.72%, rgba(255, 255, 255, 0.43) 98.63%);
+  padding: 25px 16px 55px 16px;
+}
+@media screen and (min-width: 992px) {
+  .partners {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+.partners__title {
+  font-family: "Abril Fatface", cursive;
+  color: #000000;
 .products-type {
   display: flex;
   flex-direction: column;
@@ -247,6 +263,83 @@ a {
   font-weight: 400;
   font-size: 24px;
   line-height: 32px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+.partners .block-partners {
+  list-style: none;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+  margin-top: 32px;
+}
+@media screen and (min-width: 992px) {
+  .partners .block-partners {
+    display: flex;
+  }
+}
+.partners .block-partners li {
+  display: none;
+}
+.partners .block-partners li:first-child {
+  display: block;
+}
+@media screen and (min-width: 992px) {
+  .partners .block-partners li {
+    display: block;
+  }
+}
+.partners .block-partners__items {
+  height: 103px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 992px) {
+  .partners .block-partners__items {
+    max-width: 328px;
+    max-height: 103px;
+  }
+}
+.partners .block-partners__items span::first-letter {
+  font-size: 47px;
+}
+.partners .block-partners__items--leftradius {
+  border-radius: 88.9758px 14.2361px 14.2361px 88.9758px;
+  padding-left: 7px;
+}
+.partners .block-partners__items--leftradius .bg-logo {
+  margin-right: 25px;
+}
+.partners .block-partners__items--rightradius {
+  border-radius: 14.2361px 88.9758px 88.9758px 14.2361px;
+  padding-right: 7px;
+  display: flex;
+  justify-content: end;
+}
+.partners .block-partners__items--rightradius .bg-logo {
+  margin-left: 25px;
+}
+@media screen and (min-width: 992px) {
+  .partners .block-partners__items--rightradius, .partners .block-partners__items--leftradius {
+    border-radius: 1000px;
+  }
+}
+.partners .block-partners__items .bg-logo {
+  width: 88.98px;
+  height: 88.98px;
+  background: rgba(255, 255, 255, 0.5);
+  border: 0.889758px solid #ffffff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   letter-spacing: 0.05em;
   margin-bottom: 32px;
