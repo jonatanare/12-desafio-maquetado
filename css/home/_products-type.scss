@@ -1,0 +1,169 @@
+@use '../variables';
+@use '../mixins';
+
+
+
+.products-type{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 56px;
+    
+     .wrapper-card{
+        @include mixins.responsive(variables.$large){
+            display: flex;
+            flex-direction: row;
+            margin-top: 172px;
+            width: 100%;
+            margin-bottom: 84px;
+         }
+     }
+
+    &__title{
+        font-family: variables.$font-abril-fatface;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32px;
+        text-align: center;
+        letter-spacing: 0.05em;
+        margin-bottom: 32px;
+        margin-top: 32px;
+        width: 288px;
+        @include mixins.responsive(variables.$large){
+            font-size: 32px;
+            line-height: 43px;
+            margin-top: 162px;
+            width: 470px;
+
+        }
+                       
+    }
+
+    .card{
+        background: variables.$brown-800;
+        box-shadow: 0px 28px 64px 12px rgba(0, 0, 0, 0.12);
+        border-radius: 8px;
+        width: 250px;
+        margin: 0 auto;
+        margin-bottom: 24px;
+        padding-bottom: 16px;
+        padding-left: 12px;
+        padding-right: 12px;
+        @include mixins.responsive(variables.$large){
+            margin-bottom: 0;
+            height: 239px;
+            position: relative;
+            display: flex;
+            align-items: flex-end;
+            
+        }
+           
+
+
+        &__image{
+            max-width: 205px;
+            margin: 0 auto;
+            border-bottom: 1px dashed #DBDBDB;
+            @include mixins.responsive(variables.$large){
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translateY(-50%) translateX(-50%);
+                border-bottom: 0;
+            }
+               
+            
+            img{
+                margin-top: 20px;
+                margin-bottom: 22px;
+
+                @include mixins.responsive(variables.$large){
+                    margin: 0;
+                }
+                   
+            }
+        }
+        
+        .wrapper-content{
+            @include mixins.responsive(variables.$large){
+                border-top: 1px dashed #DBDBDB;
+                padding-top: 16px;
+            }
+        }
+        
+        &__title{
+            font-family: variables.$font-abril-fatface;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            letter-spacing: 0.05em;
+            color: variables.$black-900;
+            margin-bottom: 16px;
+           
+       }
+        &__features{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-inline-start: 0;
+            width: 226px;
+            margin: 0 auto;
+
+
+            li{
+                font-family: variables.$font-raleway;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;               
+                letter-spacing: 0.05em;
+                color: variables.$black-900;                                          
+                line-height: 14px;
+                
+            }
+
+
+            li:first-child{
+                list-style: none;
+            }
+           
+        }
+        &__buttons{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 16px;
+            align-items: center;
+
+           
+           
+
+            &-price{
+                border: 1px solid #000000;
+                border-radius: 8px;
+                width: 161px;
+                height: 36px;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+            }
+            &-buy{  
+                width: 36px;
+                height: 36px;
+                position: relative;
+                height: 35px;
+                padding: 7px 7px 6px 7px;
+                
+                }                
+        } 
+
+
+    }
+
+    .btn-show{
+        margin-top: 10px;
+    }
+
+}
