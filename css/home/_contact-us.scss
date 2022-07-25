@@ -4,13 +4,14 @@
 .contact-us {
   text-align: center;
   background-repeat: no-repeat;
-  background: url(/assets/home/contact-us/contact_bckgrnd.svg) no-repeat center;
+  background: url(/assets/home/contact-us/contact_bckgrnd.svg) no-repeat bottom center;
   position: relative;
   background-size: cover;
   z-index: 0;
 
   @include mixins.responsive(variables.$large) {
-    width: 100%; // Estoy ocupando donto el ancho de la pantalla viewport width
+    width: 100%;
+    padding-bottom: 82px;
   }
 
   .overlay {
@@ -24,6 +25,10 @@
       #ffffff 0%,
       rgba(255, 255, 255, 0.35) 100%
     );
+
+    @include mixins.responsive(variables.$large){
+      background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.35) 100%);
+    }
   }
 
   .content-wrapper {
@@ -62,7 +67,7 @@
   &__forms {
     // .contacts__forms
     margin-top: 15px;
-    margin-bottom: 25px;
+    padding-bottom: 25px;
     // align-content: left;
     text-align: start;
     padding-left: 16px;
@@ -71,6 +76,7 @@
     @include mixins.responsive(variables.$large) {
       max-width: 464px;
       margin: 0 auto;
+      padding-bottom: 0;
     }
 
     label,
@@ -108,5 +114,9 @@
     width: 100%;
     margin-top: 24px;
     margin-bottom: 60px;
+
+    @include mixins.responsive(variables.$large){
+      margin-bottom: 0;
+    }
   }
 }

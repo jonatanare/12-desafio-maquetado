@@ -2,7 +2,7 @@
 @use '../mixins';
 
 
-.footer{
+.footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,50 +12,71 @@
     padding-right: 16px;
     background: linear-gradient(177.96deg, rgba(255, 255, 255, 0.43) 1.72%, #6F6F6F 107.44%);
 
-   
-        @include mixins.responsive(variables.$large){            
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
 
-                .poweredby{
-                    flex-direction: column;
-                    position: absolute;
-    
-                }
-         }
+    @include mixins.responsive(variables.$large) {
+        flex-direction: column;
+        padding-top: 84px;
+        padding-bottom: 34px;
+    }
 
-    
+    .wrapper-content{
+        @include mixins.responsive(variables.$large){
+            display: flex;
+            width: 100%;
+        }
+    }
+
+
     &__logo {
         width: 100%;
         margin-top: 56px;
+
+        @include mixins.responsive(variables.$large) {
+            width: auto;
+            flex-grow: 3;
+            margin-top: 0;
+        }
 
     }
 
     &__social-media {
         margin-top: 56px;
 
-        a:first-child{
+        @include mixins.responsive(variables.$large) {
+            margin-top: 47px;
+            flex-grow: 1;
+        }
+
+        a:first-child {
             margin-right: 21.33px;
         }
 
-        a:last-child{
+        a:last-child {
             margin-left: 21.33px;
         }
     }
 
     &__menu {
-        
-        &-title{
+
+        @include mixins.responsive(variables.$large) {
+            flex-grow: 1;
+            text-align: start;
+        }
+
+        &-title {
             margin-top: 56px;
-            font-family:  variables.$font-abril-fatface;
+            font-family: variables.$font-abril-fatface;
             font-style: normal;
             font-weight: 400px;
             font-size: 14px;
             line-height: 19px;
+
+            @include mixins.responsive(variables.$large) {
+                margin-top: 0;
+            }
         }
 
-        .options{
+        .options {
             list-style: none;
             padding-inline-start: 0;
             margin-top: 16px;
@@ -74,54 +95,101 @@
                 }
             }
 
-            li:last-child{
+            li:last-child {
                 margin-bottom: 0;
             }
         }
     }
-    
-    &__address{
 
-        &-title{
+    &__address {
+        @include mixins.responsive(variables.$large) {
+            flex-grow: 1;
+            text-align: start;
+        }
+
+        &-title {
             margin-top: 24px;
-            font-family:  variables.$font-abril-fatface;
+            font-family: variables.$font-abril-fatface;
             font-style: normal;
             font-weight: 400px;
             font-size: 14px;
             line-height: 19px;
             margin-bottom: 16px;
+
+            @include mixins.responsive(variables.$large) {
+                margin-top: 0;
+            }
         }
 
-        address{
+        address {
             font-style: normal;
             font-weight: 300;
             font-size: 14px;
             line-height: 21px;
             width: 212px;
             margin: 0 auto;
+
+            @include mixins.responsive(variables.$large) {
+                margin: 0;
+            }
         }
     }
 
-    .copyrigth{
+    #copy {
+        display: none;
 
-        margin-top: 81px;
-        margin-bottom: 32px;
-        font-family: variables.$font-raleway;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 14px;
-        line-height: 16px;
+        @include mixins.responsive(variables.$large) {
+            margin-top: 40px;
+            display: block;
+        }
     }
 
-    .poweredby{
-        font-family: variables.$font-raleway;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 16px;
-        margin-bottom: 80px;
+    .copy-power {
+
+        @include mixins.responsive(variables.$large) {
+            display: none;
+        }
+
+        .copyrigth {
+
+            margin-top: 81px;
+            margin-bottom: 32px;
+            font-family: variables.$font-raleway;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 16px;
+        }
+
+        .poweredby {
+            font-family: variables.$font-raleway;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            margin-bottom: 80px;
+
+            i {
+                font-size: 18px;
+                color: red;
+            }
+        }
     }
+
+    .wrapper-power {
+        display: none;
+        i{
+            color: red;
+            font-size: 18px;
+        }
+
+        @include mixins.responsive(variables.$large){
+            display: flex;
+            margin-top: 95px;
+            width: 126px;
+            margin: 95px auto 38px auto;
+        }
+    }
+
+
 }
-    
-    
-    
