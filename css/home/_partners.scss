@@ -183,8 +183,8 @@
       justify-content: space-between;
 
       @include mixins.responsive(variables.$large){
-        width: 120%;
-        transform: translateX(-10%);
+        width: 100%;
+        //transform: translateX(-10%);
       }
     }
   }
