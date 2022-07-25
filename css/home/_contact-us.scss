@@ -2,7 +2,6 @@
 @use "../mixins";
 
 .contact-us {
-  // display: block;
   text-align: center;
   background-repeat: no-repeat;
   background: url(/assets/home/contact-us/contact_bckgrnd.svg) no-repeat center;
@@ -11,7 +10,7 @@
   z-index: 0;
 
   @include mixins.responsive(variables.$large) {
-    width: 100vw; // Estoy ocupando donto el ancho de la pantalla viewport width
+    width: 100%; // Estoy ocupando donto el ancho de la pantalla viewport width
   }
 
   .overlay {
