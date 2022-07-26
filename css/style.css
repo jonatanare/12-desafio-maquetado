@@ -134,11 +134,10 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 50px;
   text-align: center;
   padding-left: 16px;
   padding-right: 16px;
-  background: linear-gradient(177.96deg, rgba(255, 255, 255, 0.43) 1.72%, #6F6F6F 107.44%);
+  background: linear-gradient(177.96deg, rgba(255, 255, 255, 0.43) 1.72%, #6F6F6F 107.44%) bottom center;
 }
 @media screen and (min-width: 992px) {
   .footer {
@@ -601,6 +600,8 @@ a {
     flex-direction: column;
     padding-left: 0;
     padding-right: 0;
+    padding-bottom: 83px;
+    padding-top: 49px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -988,6 +989,17 @@ a {
   height: 148px;
   width: 100%;
   resize: none;
+}
+@media screen and (min-width: 992px) {
+  .contact-us .wrapper-inputs {
+    display: flex;
+  }
+}
+@media screen and (min-width: 992px) {
+  .contact-us .phone-group, .contact-us .email-group {
+    display: inline-block;
+    width: 50%;
+  }
 }
 .contact-us button {
   width: 100%;

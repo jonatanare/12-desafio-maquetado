@@ -109,6 +109,19 @@
     resize: none;
   }
 
+  .wrapper-inputs{
+    @include mixins.responsive(variables.$large){
+      display: flex;
+    }
+  }
+
+  .phone-group, .email-group {
+    @include mixins.responsive(variables.$large){
+      display: inline-block;
+      width: 50%;
+    }
+  }
+
   button {
     // .contact
     width: 100%;
