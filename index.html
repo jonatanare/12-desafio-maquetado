@@ -1,159 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <title>12 Desafío Modulo Maquetado</title>
-
-</head>
-
-<body>
+  </head>
+  <body>
+    <!-- NAV - Víctor -->
     <header class="header">
-        <nav class="nav">
-            <a href="#">
-                <img src="icon-pazioli" alt="">
-            </a>
-            <img src="carrito" alt="">
-        </nav>
-        <button></button>
+      <nav class="nav">
+        <a class="nav__logo" href="/">
+          <img src="assets/home/nav/pazioli-image.svg" alt="Pazioli Logo" />
+        </a>
+        <div class="wrapper-nav">
+          <ul class="nav__list">
+            <li><a href="/">Home</a></li>
+            <li><a href="Pianos">Pianos</a></li>
+            <li><a href="Soy estudiante">Soy estudiante</a></li>
+            <li>
+              <button class="btn-pazioli contained btn--contact-us">
+                Contáctanos
+              </button>
+            </li>
+          </ul>
+          <button class="cart__btn">
+            <img src="assets/icons/icon-cart.svg" alt="Add Cart" />
+            <span>1</span>
+          </button>
+        </div>
+      </nav>
     </header>
     <!-- Hero - Jonatan -->
     <section class="hero">
-        <!-- [block-name__element-name] - BEM -->
-        <p class="hero__paragraph">El arte de tocar piano</p>
-        <h1 class="hero__h1">Instituto Pazioli</h1>
-        <div class="hero__buttons">
-            <button class="btn-pazioli contained">Ver cursos</button>
-            <!-- [block-name_or_element-name--modificador] -->
-            <button class="btn-pazioli outlined hero__buttons--purchase">Adquirir plano</button>
-        </div>
-        <div class="hero__img-piano">
-        <img class="" src="/assets/home/hero/img-piano-negro.png" alt="Piano negro">
-        </div>
+      <!-- [block-name__element-name] - BEM -->
+      <p class="hero__paragraph">El arte de tocar piano</p>
+      <h1 class="hero__h1">Instituto Pazioli</h1>
+      <div class="hero__buttons">
+        <button class="btn-pazioli contained">Ver cursos</button>
+        <!-- [block-name_or_element-name--modificador] -->
+        <button class="btn-pazioli outlined hero__buttons--purchase">
+          Adquirir plano
+        </button>
+      </div>
+      <div class="hero__img-piano">
+        <img
+          class=""
+          src="/assets/home/hero/img-piano-negro.png"
+          alt="Piano negro"
+        />
+      </div>
 
-        <div class="hero__social-media">
-            <a href="www.facebook.com"><img src="/assets/icons/icon-facebook.svg" alt="Facebook"></a>
-            <a href="www.facebook.com"><img src="/assets/icons/icon-linkedin.svg" alt="Facebook"></a>
-            <a href="www.facebook.com"><img src="/assets/icons/icon-twitter.svg" alt="Facebook"></a>
-        </div>
+      <div class="hero__social-media">
+        <a href="www.facebook.com"
+          ><img src="/assets/icons/icon-facebook.svg" alt="Facebook"
+        /></a>
+        <a href="www.facebook.com"
+          ><img src="/assets/icons/icon-linkedin.svg" alt="Facebook"
+        /></a>
+        <a href="www.facebook.com"
+          ><img src="/assets/icons/icon-twitter.svg" alt="Facebook"
+        /></a>
+      </div>
     </section>
     <!-- New Model - Jonatan -->
     <section class="new-models">
-        <h2>Conoce nuestro nuevo modelo en calse</h2>
-        <img src="#" alt="">
-        <article>
-            <h3>Nuevo Ebony F228</h3>
-            <h4>Valoración</h4>
-            <h3>Desde: $110,00.00</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, iste iusto. Nam accusantium quod, dolore
-                commodi voluptate explicabo ducimus soluta neque ut at aliquam sapiente dicta ea libero possimus.
-                Numquam.</p>
-            <ul>
-                <li>Nuevo</li>
-                <li>2021</li>
-                <li>Acús...</li>
-                <li>M. Cedro</li>
-            </ul>
-            <button class="btn-pazioli contained">Agregar al carrito</button>
+      <h2 class="new-models__title">Conoce nuestro nuevo modelo en calse</h2>
+      <video class="new-models__bg-video" src="/assets/home/new-models/playing-video.mp4" autoplay="true" muted="true" loop="true"></video>
+
+      <div class="wrapper-article-image">
+        <div class="new-models__image">
+          <img class="new-models__image-bg-1" src="/assets/home/new-models/bg-form-new-2.png" alt="Form white">
+          <img class="new-models__image-bg-2" src="/assets/home/new-models/bg-form-new.png" alt="Formo white 2">
+          <img class="new-models__image-product" src="/assets/home/new-models/img-piano-ebony.png" alt="">
+        </div>
+        <article class="new-models__article">
+          <h3 class="new-models__article-title">Nuevo Ebony F228</h3>
+          <div class="new-models__article-review">
+            <p>Valoración</p>
+            <span>
+              <img src="/assets/icons/icon-rating.svg" alt="icon review">
+              <img src="/assets/icons/icon-rating.svg" alt="icon review">
+              <img src="/assets/icons/icon-rating.svg" alt="icon review">
+              <img src="/assets/icons/icon-rating.svg" alt="icon review">
+              <img src="/assets/icons/icon-rating.svg" alt="icon review">
+            </span>
+          </div>
+          <h3 class="new-models__article-price">Desde: $110,00.00</h3>
+          <p class="new-models__article-text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            <br class="" />
+            Sint, iste
+            iusto. Nam accusantium quod, dolore commodi voluptate explicabo
+            ducimus soluta neque ut at aliquam sapiente dicta ea libero possimus.
+            Numquam.
+          </p>
+          <ul class="card__features">
+            <li>Nuevo</li>
+            <li>2021</li>
+            <li>Acús...</li>
+            <li>M. Cedro</li>
+          </ul>
+          <button class="btn-pazioli contained add-cart">Agregar al carrito</button>
         </article>
+      </div>
     </section>
     <section class="products-type">
-        <h2>¿Qué tipo de piano estás buscando?</h2>
-        <article>
-            <img src="#" alt="">
-            <h3>The Butterfly</h3>
-            <ul>
-                <li>Nuevo</li>
-                <li>2021</li>
-                <li>Acús...</li>
-                <li>M. Cedro</li>
+      <h2 class="products-type__title">¿Qué tipo de piano estás buscando?</h2>
+      <section class="wrapper-card">
+        <article class="card">
+          <div class="card__image">
+            <img src="assets/home/products-type/img-butterfly.png" alt="" />
+          </div>
+          <div class="wrapper-content">
+            <h3 class="card__title">The Butterfly</h3>
+            <ul class="card__features">
+              <li>Nuevo</li>
+              <li>2021</li>
+              <li>Acús...</li>
+              <li>M. Cedro</li>
             </ul>
-            <p>Desde: $195k mn</p>
-            <button>Carrito</button>
+            <div class="card__buttons">
+              <p class="card__buttons-price">Desde: $195k mn</p>
+              <button class="btn-pazioli contained card__buttons-buy">
+                <img src="./assets/icons/icon-car-white.svg" alt="Add Cart" />
+              </button>
+            </div>
+          </div>
         </article>
-        <article>
-            <img src="#" alt="">
-            <h3>Golden Leaf</h3>
-            <ul>
-                <li>Nuevo</li>
-                <li>2021</li>
-                <li>Acús...</li>
-                <li>M. Cedro</li>
+        <article class="card">
+          <div class="card__image">
+            <img src="./assets/home/products-type/img-golden.png" alt="" />
+          </div>
+          <div class="wrapper-content">
+            <h3 class="card__title">Golden Leaf</h3>
+            <ul class="card__features">
+              <li>Nuevo</li>
+              <li>2021</li>
+              <li>Acús...</li>
+              <li>M. Cedro</li>
             </ul>
-            <p>Desde: $305k mn</p>
-            <button>Carrito</button>
+            <div class="card__buttons">
+              <p class="card__buttons-price">Desde: $305k mn</p>
+              <button class="btn-pazioli contained card__buttons-buy">
+                <img src="./assets/icons/icon-car-white.svg" alt="Add Cart" />
+              </button>
+            </div>
+          </div>
         </article>
-        <article>
-            <img src="#" alt="">
-            <h3>Walnut Strauss</h3>
-            <ul>
-                <li>Nuevo</li>
-                <li>2021</li>
-                <li>Acús...</li>
-                <li>M. Cedro</li>
+        <article class="card">
+          <div class="card__image">
+            <img src="./assets/home/products-type/img-walnut.png" alt="" />
+          </div>
+          <div class="wrapper-content">
+            <h3 class="card__title">Walnut Strauss</h3>
+            <ul class="card__features">
+              <li>Nuevo</li>
+              <li>2021</li>
+              <li>Acús...</li>
+              <li>M. Cedro</li>
             </ul>
-            <p>Desde: $125k mn</p>
-            <button>Carrito</button>
+            <div class="card__buttons">
+              <p class="card__buttons-price">Desde: $125k mn</p>
+              <button class="btn-pazioli contained card__buttons-buy">
+                <img src="./assets/icons/icon-car-white.svg" alt="Add Cart" />
+              </button>
+            </div>
+          </div>
         </article>
-        <button>Ver más</button>
+      </section>
+      <button class="btn-pazioli contained btn-show">Ver más</button>
     </section>
+    <!-- CONTACT-US - Víctor -->
     <section class="contact-us">
-        <h2>Contáctanos</h2>
-        <p>¿Quieres educarte formalmente en este instrumento? Toca más rápido, logra mayor fluidez en las composiciones
-            complejas. Contáctanos para conocer tus objetivos.</p>
-        <div>
-            <form action="#">Nombre</form>
-            <!--Meter 'type'-->
-            <form action="#">Teléfono</form>
-            <form action="#">Email</form>
-            <form action="#">Cuéntanos más</form>
-            <button>Enviar</button>
-        </div>
+      <div class="overlay"></div>
+      <div class="content-wrapper">
+        <h2 class="contact-us__title">Contáctanos</h2>
+        <p class="contact-us__paragraph">
+          ¿Quieres educarte formalmente en este instrumento? Toca más rápido,
+          logra mayor fluidez en las composiciones complejas. Contáctanos para
+          conocer tus objetivos.
+        </p>
+        <form class="contact-us__forms">
+          <label action="#">Nombre</label>
+          <input type="text" name="" id="" />
+          <div class="wrapper-inputs">
+            <div class="phone-group">
+              <label action="#">Teléfono</label>
+              <input type="tel" name="" id="" />
+            </div>
+  
+            <div class="email-group">
+              <label action="#">Email</label>
+              <input type="email" name="" id="" />
+            </div>
+          </div>
+          <label action="#">Cuéntanos más</label>
+          <textarea id="w3review" name="" rows="" cols=""></textarea>
+          <button class="btn-pazioli contained">Enviar</button>
+        </form>
+      </div>
     </section>
     <section class="partners">
-        <h2>Conoce a nuestros partners</h2>
-        <a href="">PETROF</a>
-        <!--<button></button>-->
-        <a href="">BOOKPA</a>
-        <!--<button></button>-->
-        <img src="#" alt="">
-        <a href="">PIAFMAR</a>
-        <!--<button></button>-->
-        <img src="#" alt="">
-    </section>
-    <footer class="footer">
-        <a href="#">
-            <img src="#" alt="">
-        </a>
-        <a href="">Facebook</a>
-        <a href="">Twitter</a>
-        <a href="">LinkedIn</a>
-        <h5>Nosotros</h5>
-        <ul>
-            <li>Home</li>
-            <li>Nuevo</li>
-            <li>Pianos</li>
-            <li>Conoce nuestros cursos</li>
-        </ul>
-        <h5>Contáctanos</h5>
-        <p>
-            México
-            Tonalá 10, Roma Nte, Cuauhtémoc, 03800 Ciudad de México, CDMX.
-        </p>
-        <p>© Pazioli 2021, todos los derechos reservados.</p>
-        <h6></h6>
-        <!--<p>-->
-        Powered with ♥️ by
-        DevKoore
-    </footer>
-</body>
+      <h2 class="partners__title">Conoce a nuestros partners</h2>
+      <div class="partners__wrapper">
+        <ul class="block-partners">
+          <li class="block-partners__items block-partners__items--leftradius">
+            <a class="block-partners__items block-partners__items--link" href="">
+              <div class="bg-logo">
+                <img src="./assets/icons/icon-petrof.svg" alt="" />
+              </div>
+              <span>petrof</span>
+            </a>
+          </li>
 
+          <li class="block-partners__items block-partners__items--leftradius">
+            <a class="block-partners__items block-partners__items--link" href="">
+              <div class="bg-logo">
+                <img id="parispian" src="./assets/icons/icon-parispian-.svg" alt="" />
+              </div>
+              <span>ParísPian</span>
+            </a>
+          </li>
+
+          
+        </ul>
+
+        <ul class="block-partners block-partners--middle">
+          <li class="block-partners__items block-partners__items--rightradius">
+            <a class="block-partners__items block-partners__items--link" href="">
+              <span>bookpa</span>
+              <div class="bg-logo"><img src="./assets/icons/icon-bookpa.svg" alt="" /></div>
+            </a>
+            </li>
+            <li id="hefilti" class="block-partners__items block-partners__items--rightradius">
+              <a class="block-partners__items block-partners__items--link" href="">
+                <span>hefilti</span>
+                <div class="bg-logo"><img src="./assets/icons/icon-hefilti.svg" alt="" /></div>
+              </a>
+            </li>
+            <li class="block-partners__items block-partners__items--rightradius">
+             <a class="block-partners__items block-partners__items--link" href="">
+              <span>yamaha</span>
+             <div class="bg-logo"><img src="" alt=""/></div>
+
+            </a>
+            </li>
+        </ul>
+
+        <ul class="block-partners ">
+          <li class="block-partners__items block-partners__items--leftradius piafmar">
+          <a class="block-partners__items block-partners__items--link" href="">
+            <div class="bg-logo">
+              <img src="./assets/icons/icon-piafmar.svg" alt="" />
+            </div>
+            <span>piafmar</span>
+          </a>
+          </li>
+          <li class="block-partners__items block-partners__items--leftradius pianotwo">
+            <a class="block-partners__items block-partners__items--link" href="">
+              <div class="bg-logo">
+                <img id="pianotwo" src="./assets/icons/icon-pianotwo.svg" alt="" />
+              </div>
+              <span>pianotwo</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="wrapper-content">
+        <section class="footer__logo">
+          <a class="image" href="">
+            <img src="/assets/home/footer/pazioli-image.png" alt="Logo Pazioli" />
+          </a>
+          <section class="footer__social-media">
+            <a href="www.facebook.com"
+              ><img src="/assets/icons/icon-facebook.svg" alt="Facebook"
+            /></a>
+            <a href="www.facebook.com"
+              ><img src="/assets/icons/icon-linkedin.svg" alt="Facebook"
+            /></a>
+            <a href="www.facebook.com"
+              ><img src="/assets/icons/icon-twitter.svg" alt="Facebook"
+            /></a>
+          </section>
+        </section>
+        <section class="footer__menu">
+          <h5 class="footer__menu-title">Nosotros</h5>
+          <ul class="options">
+            <li><a class="first" href=""> Home</a></li>
+            <li><a href="Nuevo">Nuevo</a></li>
+            <li><a href="Pianos">Pianos</a></li>
+            <li><a href="Pianos">Conoce nuestros cursos</a></li>
+            <li><p id="copy">© Pazioli 2021, todos los derechos reservados.</p></li>
+          </ul>
+        </section>
+        <section class="footer__address">
+          <h5 class="footer__address-title">Contáctanos</h5>
+          <address>
+            México Tonalá 10, Roma Nte, Cuauhtémoc, 03800 Ciudad de México, CDMX.
+          </address>
+        </section>
+        <section class="copy-power">
+          <p class="copyrigth">© Pazioli 2021, todos los derechos reservados.</p>
+          <p class="poweredby">Powered with <i>♥️</i> by<br /><strong>DevKoore</strong></p>
+        </section>
+      </div>
+      <div class="wrapper-power">
+        <p class="poweredby">Powered with <i>♥️</i> by<br /><strong>DevKoore</strong></p>
+      </div>
+    </footer>
+  </body>
 </html>

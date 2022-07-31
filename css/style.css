@@ -58,6 +58,250 @@ a {
   background-color: #000000;
 }
 
+.header {
+  z-index: 999;
+  padding: 32px 34px 0 16px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #FFFFFF;
+}
+@media screen and (min-width: 992px) {
+  .header {
+    padding-left: 32px;
+    padding-right: 50px;
+  }
+}
+.header .nav {
+  display: flex;
+  justify-content: space-between;
+}
+.header .nav__logo {
+  max-width: 88px;
+}
+.header .nav .wrapper-nav {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.header .nav__list {
+  display: none;
+  list-style: none;
+}
+.header .nav__list li a {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  color: #000000;
+}
+.header .nav__list .btn--contact-us {
+  color: #FFFFFF;
+}
+@media screen and (min-width: 992px) {
+  .header .nav__list {
+    display: flex;
+    width: 397px;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.header .nav .cart__btn {
+  width: 35px;
+  height: 35px;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  margin-left: 24px;
+  cursor: pointer;
+}
+.header .nav .cart__btn span {
+  width: 24px;
+  height: 17px;
+  background-color: #FFBA60;
+  position: absolute;
+  border-radius: 50px;
+  top: 0;
+  right: -18px;
+  color: #FFFFFF;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding-left: 16px;
+  padding-right: 16px;
+  background: linear-gradient(177.96deg, rgba(255, 255, 255, 0.43) 1.72%, #6F6F6F 107.44%) bottom center;
+}
+@media screen and (min-width: 992px) {
+  .footer {
+    flex-direction: column;
+    padding-top: 84px;
+    padding-bottom: 34px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .footer .wrapper-content {
+    display: flex;
+    width: 100%;
+  }
+}
+.footer__logo {
+  width: 100%;
+  margin-top: 56px;
+}
+@media screen and (min-width: 992px) {
+  .footer__logo {
+    width: auto;
+    flex-grow: 3;
+    margin-top: 0;
+  }
+}
+.footer__social-media {
+  margin-top: 56px;
+}
+@media screen and (min-width: 992px) {
+  .footer__social-media {
+    margin-top: 47px;
+    flex-grow: 1;
+  }
+}
+.footer__social-media a:first-child {
+  margin-right: 21.33px;
+}
+.footer__social-media a:last-child {
+  margin-left: 21.33px;
+}
+@media screen and (min-width: 992px) {
+  .footer__menu {
+    flex-grow: 1;
+    text-align: start;
+  }
+}
+.footer__menu-title {
+  margin-top: 56px;
+  font-family: "Abril Fatface", cursive;
+  font-style: normal;
+  font-weight: 400px;
+  font-size: 14px;
+  line-height: 19px;
+}
+@media screen and (min-width: 992px) {
+  .footer__menu-title {
+    margin-top: 0;
+  }
+}
+.footer__menu .options {
+  list-style: none;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+  margin-top: 16px;
+}
+.footer__menu .options li {
+  margin-bottom: 8px;
+}
+.footer__menu .options li a {
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+}
+.footer__menu .options li:last-child {
+  margin-bottom: 0;
+}
+@media screen and (min-width: 992px) {
+  .footer__address {
+    flex-grow: 1;
+    text-align: start;
+  }
+}
+.footer__address-title {
+  margin-top: 24px;
+  font-family: "Abril Fatface", cursive;
+  font-style: normal;
+  font-weight: 400px;
+  font-size: 14px;
+  line-height: 19px;
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 992px) {
+  .footer__address-title {
+    margin-top: 0;
+  }
+}
+.footer__address address {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  width: 212px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 992px) {
+  .footer__address address {
+    margin: 0;
+  }
+}
+.footer #copy {
+  display: none;
+}
+@media screen and (min-width: 992px) {
+  .footer #copy {
+    margin-top: 40px;
+    display: block;
+  }
+}
+@media screen and (min-width: 992px) {
+  .footer .copy-power {
+    display: none;
+  }
+}
+.footer .copy-power .copyrigth {
+  margin-top: 81px;
+  margin-bottom: 32px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+}
+.footer .copy-power .poweredby {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 80px;
+}
+.footer .copy-power .poweredby i {
+  font-size: 18px;
+  color: red;
+}
+.footer .wrapper-power {
+  display: none;
+}
+.footer .wrapper-power i {
+  color: red;
+  font-size: 18px;
+}
+@media screen and (min-width: 992px) {
+  .footer .wrapper-power {
+    display: flex;
+    margin-top: 95px;
+    width: 126px;
+    margin: 95px auto 38px auto;
+  }
+}
+
 .hero {
   position: relative;
 }
@@ -127,5 +371,643 @@ a {
     position: absolute;
     right: 32px;
     bottom: 81px;
+  }
+}
+
+.new-models {
+  position: relative;
+  top: -2px;
+  overflow: hidden;
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(0, 0, 0, 0.75) 37.19%, rgba(0, 0, 0, 0.75) 76.04%, #FFFFFF 100%);
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-bottom: 42px;
+}
+@media screen and (min-width: 992px) {
+  .new-models {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.820101) 14.06%, rgba(0, 0, 0, 0.75) 37.19%, rgba(0, 0, 0, 0.75) 55.32%, rgba(255, 255, 255, 0.6454) 88.52%, #FFFFFF 97.7%);
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 141px;
+  }
+}
+.new-models__bg-video {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  height: 330px;
+}
+@media screen and (min-width: 992px) {
+  .new-models__bg-video {
+    height: 100vw;
+  }
+}
+.new-models__title {
+  max-width: 288px;
+  text-align: center;
+  margin: 0 auto;
+  font-family: "Abril Fatface", cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+.new-models .wrapper-article-image {
+  margin-top: 24px;
+}
+@media screen and (min-width: 992px) {
+  .new-models .wrapper-article-image {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 119px;
+    padding-bottom: 56px;
+    justify-content: space-between;
+  }
+}
+.new-models__image {
+  position: relative;
+  width: 288px;
+  margin: 0 auto;
+  height: 240px;
+}
+@media screen and (min-width: 992px) {
+  .new-models__image {
+    width: 506.42px;
+    max-height: 422px;
+    margin: 0;
+  }
+}
+.new-models__image-bg-1 {
+  position: absolute;
+  top: 41px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+@media screen and (min-width: 992px) {
+  .new-models__image-bg-1 {
+    width: 100%;
+  }
+}
+.new-models__image-bg-2 {
+  position: absolute;
+  top: 38px;
+  left: 50%;
+  z-index: 2;
+  transform: translateX(-50%);
+}
+@media screen and (min-width: 992px) {
+  .new-models__image-bg-2 {
+    width: 100%;
+  }
+}
+.new-models__image-product {
+  position: absolute;
+  top: 41px;
+  left: 50%;
+  transform: translateX(-65%);
+  z-index: 3;
+}
+@media screen and (min-width: 992px) {
+  .new-models__image-product {
+    width: 100%;
+  }
+}
+.new-models__article {
+  position: relative;
+  z-index: 5;
+  text-align: center;
+}
+@media screen and (min-width: 992px) {
+  .new-models__article {
+    text-align: start;
+    margin-top: 49px;
+  }
+}
+.new-models__article-title {
+  font-family: "Abril Fatface", cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
+.new-models__article-review {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 992px) {
+  .new-models__article-review {
+    justify-content: flex-start;
+  }
+}
+.new-models__article-review p {
+  font-weight: 700;
+  font-size: 12px;
+  color: #FFFFFF;
+  letter-spacing: 0.05em;
+}
+.new-models__article-review span {
+  margin-left: 20px;
+  border: none;
+  max-width: 112px;
+}
+.new-models__article-review span img {
+  width: 16px;
+  height: 16px;
+}
+.new-models__article-price {
+  margin-top: 16px;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
+.new-models__article-text {
+  max-width: 288px;
+  margin: 0 auto;
+  margin-top: 14px;
+  margin-bottom: 59px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #FFFFFF;
+  letter-spacing: 0.05em;
+}
+@media screen and (min-width: 992px) {
+  .new-models__article-text {
+    max-width: 360px;
+    margin-bottom: 18px;
+  }
+}
+.new-models__article-text br {
+  display: none;
+}
+@media screen and (min-width: 992px) {
+  .new-models__article-text br {
+    display: block;
+  }
+}
+.new-models__article .card__features {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+  width: 226px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 992px) {
+  .new-models__article .card__features {
+    margin: 0;
+  }
+}
+.new-models__article .card__features li {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  line-height: 14px;
+}
+.new-models__article .card__features li:first-child {
+  list-style: none;
+}
+.new-models__article .add-cart {
+  margin-top: 34px;
+  width: 288px;
+}
+
+.partners {
+  background: linear-gradient(177.96deg, #6f6f6f 1.72%, rgba(255, 255, 255, 0.43) 98.63%) top center;
+  padding: 25px 16px 55px 16px;
+}
+@media screen and (min-width: 992px) {
+  .partners {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 83px;
+    padding-top: 49px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .partners__wrapper {
+    width: 100%;
+  }
+}
+.partners__title {
+  font-family: "Abril Fatface", cursive;
+  color: #000000;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+@media screen and (min-width: 992px) {
+  .partners__title {
+    font-size: 32px;
+    margin-bottom: 81px;
+  }
+}
+.partners .block-partners {
+  list-style: none;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+  margin-top: 32px;
+}
+@media screen and (min-width: 992px) {
+  .partners .block-partners {
+    display: flex;
+    justify-content: center;
+  }
+}
+.partners .block-partners li {
+  display: none;
+}
+.partners .block-partners li:first-child {
+  display: flex;
+}
+@media screen and (min-width: 992px) {
+  .partners .block-partners li {
+    display: flex;
+  }
+}
+.partners .block-partners__items {
+  height: 103px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  background-color: #000000;
+  border-radius: 100px;
+}
+@media screen and (min-width: 992px) {
+  .partners .block-partners__items {
+    max-width: 328px;
+    max-height: 103px;
+  }
+}
+.partners .block-partners__items span::first-letter {
+  font-size: 47px;
+}
+.partners .block-partners__items--leftradius {
+  border-radius: 88.9758px 14.2361px 14.2361px 88.9758px;
+  padding-left: 7px;
+  margin-right: 89px;
+}
+.partners .block-partners__items--leftradius .bg-logo {
+  margin-right: 26px;
+}
+.partners .block-partners__items--leftradius .bg-logo #parispian {
+  width: 70px;
+  height: 38px;
+}
+.partners .block-partners__items--leftradius .bg-logo #pianotwo {
+  width: 43px;
+  height: 43px;
+}
+.partners .block-partners__items--rightradius {
+  border-radius: 14.2361px 88.9758px 88.9758px 14.2361px;
+  padding-right: 7px;
+  display: flex;
+  justify-content: end;
+}
+.partners .block-partners__items--rightradius a {
+  justify-content: flex-end;
+}
+.partners .block-partners__items--rightradius .bg-logo {
+  margin-left: 42px;
+}
+@media screen and (min-width: 992px) {
+  .partners .block-partners__items--rightradius, .partners .block-partners__items--leftradius {
+    border-radius: 1000px;
+  }
+}
+.partners .block-partners__items .bg-logo {
+  width: 88.98px;
+  height: 88.98px;
+  background: rgba(255, 255, 255, 0.5);
+  border: 0.889758px solid #ffffff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+.partners .block-partners__items--link {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+}
+.partners .block-partners__items--link span {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.partners .block-partners #hefilti {
+  margin-right: 81px;
+  margin-left: 81px;
+}
+.partners .block-partners .piafmar {
+  order: 2;
+}
+@media screen and (min-width: 992px) {
+  .partners .block-partners .piafmar {
+    border-radius: 88.9758px 14.2361px 14.2361px 88.9758px;
+  }
+}
+.partners .block-partners .pianotwo {
+  order: 1;
+}
+.partners .block-partners--middle {
+  margin-top: 56.79px;
+  margin-bottom: 56.79px;
+  justify-content: space-between;
+}
+@media screen and (min-width: 992px) {
+  .partners .block-partners--middle {
+    width: 100%;
+  }
+}
+
+.products-type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 56px;
+}
+@media screen and (min-width: 992px) {
+  .products-type .wrapper-card {
+    display: flex;
+    flex-direction: row;
+    margin-top: 172px;
+    width: 100%;
+    margin-bottom: 84px;
+  }
+}
+.products-type__title {
+  font-family: "Abril Fatface", cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  margin-bottom: 32px;
+  margin-top: 32px;
+  width: 288px;
+}
+@media screen and (min-width: 992px) {
+  .products-type__title {
+    font-size: 32px;
+    line-height: 43px;
+    margin-top: 162px;
+    width: 470px;
+  }
+}
+.products-type .card {
+  background: #FFFFFF;
+  box-shadow: 0px 28px 64px 12px rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  width: 250px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+@media screen and (min-width: 992px) {
+  .products-type .card {
+    margin-bottom: 0;
+    height: 239px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+  }
+}
+.products-type .card__image {
+  max-width: 205px;
+  margin: 0 auto;
+  border-bottom: 1px dashed #DBDBDB;
+}
+@media screen and (min-width: 992px) {
+  .products-type .card__image {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    border-bottom: 0;
+  }
+}
+.products-type .card__image img {
+  margin-top: 20px;
+  margin-bottom: 22px;
+}
+@media screen and (min-width: 992px) {
+  .products-type .card__image img {
+    margin: 0;
+  }
+}
+@media screen and (min-width: 992px) {
+  .products-type .card .wrapper-content {
+    border-top: 1px dashed #DBDBDB;
+    padding-top: 16px;
+  }
+}
+.products-type .card__title {
+  font-family: "Abril Fatface", cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  color: #000000;
+  margin-bottom: 16px;
+}
+.products-type .card__features {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+  width: 226px;
+  margin: 0 auto;
+}
+.products-type .card__features li {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  color: #000000;
+  line-height: 14px;
+}
+.products-type .card__features li:first-child {
+  list-style: none;
+}
+.products-type .card__buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 16px;
+  align-items: center;
+}
+.products-type .card__buttons-price {
+  border: 1px solid #000000;
+  border-radius: 8px;
+  width: 161px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.products-type .card__buttons-buy {
+  width: 36px;
+  height: 36px;
+  position: relative;
+  height: 35px;
+  padding: 7px 7px 6px 7px;
+}
+.products-type .btn-show {
+  margin-top: 10px;
+}
+
+.contact-us {
+  text-align: center;
+  background-repeat: no-repeat;
+  background: url(/assets/home/contact-us/contact_bckgrnd.svg) no-repeat bottom center;
+  position: relative;
+  background-size: cover;
+  z-index: 0;
+}
+@media screen and (min-width: 992px) {
+  .contact-us {
+    width: 100%;
+    padding-bottom: 82px;
+  }
+}
+.contact-us .overlay {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0.35) 100%);
+}
+@media screen and (min-width: 992px) {
+  .contact-us .overlay {
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.35) 100%);
+  }
+}
+.contact-us .content-wrapper {
+  position: relative;
+  z-index: 2;
+}
+.contact-us__title {
+  font-family: "Abril Fatface", cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+  margin-top: 39px;
+  margin-bottom: 39px;
+  z-index: 3;
+}
+.contact-us__paragraph {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  margin-bottom: 24px;
+}
+@media screen and (min-width: 992px) {
+  .contact-us__paragraph {
+    max-width: 561px;
+    margin: 0 auto;
+  }
+}
+.contact-us__forms {
+  margin-top: 15px;
+  padding-bottom: 25px;
+  text-align: start;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media screen and (min-width: 992px) {
+  .contact-us__forms {
+    max-width: 464px;
+    margin: 0 auto;
+    padding-bottom: 0;
+  }
+}
+.contact-us__forms label,
+.contact-us__forms input {
+  display: block;
+}
+.contact-us label {
+  margin-top: 24px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+}
+.contact-us input,
+.contact-us textarea {
+  width: 100%;
+  height: 36px;
+  background: rgba(0, 0, 0, 0.65);
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+.contact-us textarea {
+  height: 148px;
+  width: 100%;
+  resize: none;
+}
+@media screen and (min-width: 992px) {
+  .contact-us .wrapper-inputs {
+    display: flex;
+  }
+}
+@media screen and (min-width: 992px) {
+  .contact-us .phone-group, .contact-us .email-group {
+    display: inline-block;
+    width: 50%;
+  }
+}
+.contact-us button {
+  width: 100%;
+  margin-top: 24px;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 992px) {
+  .contact-us button {
+    margin-bottom: 0;
   }
 }/*# sourceMappingURL=style.css.map */
